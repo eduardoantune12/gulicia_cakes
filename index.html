@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gulicia Cake's</title>
+    <link rel="stylesheet" href="/lib/bootstrap.min.css">
+    <style>
+        #carousel-exemplo{
+            height: 600px;
+        }
+        #carousel-exemplo .carousel-inner {
+            height: 100%;
+        }   
+
+        #carousel-exemplo .carousel-item {
+            height: 100%;
+        }
+
+        #carousel-exemplo .carousel-item img {
+            height: 100%;
+            object-fit:cover;
+        }
+
+        h1{
+            color: #fff;
+        }
+
+        .navbar-nav .nav-link{
+            background-color: #f05294;
+        }
+
+        .navbar-nav{
+            color: #fff;
+        }
+
+        .nav-link{
+            color: #fff;
+            text-align:center;
+            width: 24%;
+            margin-bottom: 3px;
+        }
+        .nav-link img{
+            max-width: 100%;
+            width: 8%;
+            max-height: 100%;
+            margin-right: 3px;
+        }
+        .cabecalho {
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            background-color: #b8024e;
+            z-index: 1000; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        .card-body{
+            background-color: #b8024e;
+            color: #fff;
+        }
+        .card-header{
+            background-color: #b8024e;
+            color: #fff;
+        }
+        footer{
+            background-color: #b8024e;
+            box-shadow: 5px 5px 5px 7px rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 10px;
+        }
+        body {
+            background-image: url('/imagens/papel-de-parede-doceria-hd-cortado.png');
+            background-size: cover; /* Faz a imagem cobrir toda a tela */
+            background-position: center; /* Centraliza a imagem */
+            background-repeat: no-repeat; /* Impede a repetição da imagem */
+            background-attachment: fixed; /* Mantém a imagem fixa enquanto rola a página */
+}
+    </style>
+</head>
+<body>
+    <!-- Barra de navegação -->
+    <header id="cabecalho" class="cabecalho">
+        <div class="navbar navbar-expand-g">
+            <div class="container">
+                <h1>Gulícia Cake's</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.instagram.com/tatyolitunes_cakes/" target="_blank">
+                                <img src="/imagens/instagram.logo.webp" > Visite nosso Instagram</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.facebook.com/nelirodrigues.antunes?locale=pt_BR" target="_blank">
+                                <img src="/imagens/facebook logo.jpg" > Visite meu Facebook</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho"></div>
+
+    <!-- Carousel -->
+    <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div data-bs-interval="3000" class="carousel-item active">
+                <img class="d-block w-100" src="./imagens/Bolinho-caseirinho-_-dois-amores-_-para-seu-cafezinho-da-tarde-que-tal-em-__-️-uma-delícia-.png">
+                <div class="carousel-caption">
+                    <h2>Bolo dois amores</h2>
+                </div>
+            </div>
+            <div data-bs-interval="3000" class="carousel-item">
+                <img class="d-block w-100" src="./Imagens/Bolinho-de-cenoura-caserinho-_-cheio-de-cobertura-que-todo-mundo-ama-_caseirinhosgourmet.png">
+                <div class="carousel-caption">
+                    <h2>Bolo de cenoura</h2>
+                </div>
+            </div>
+            <div data-bs-interval="3000" class="carousel-item">
+                <img class="d-block w-100" src="./Imagens/naked-cake-_-pra-quem-ama-um-doce-_super-recheado-e-com-brigadeiros-recheados-de-kinder-Bueno-da-_do_1.png">
+                <div class="carousel-caption">
+                    <h2>Naked Cakes</h2>
+                </div>
+            </div>
+            <div data-bs-interval="3000" class="carousel-item">
+                <img class="d-block w-100" src="./Imagens/Temos-Naruto-_-o-fã-amou-o-bolo.png">
+                <div class="carousel-caption">
+                    <h2>Bolo do Naruto</h2>
+                </div>
+            </div>
+        </div>
+        <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="3"></button>
+    </div>
+
+    <!-- Cards -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 p-2">
+                <article class="card">
+                    <header class="card-header">
+                        Opções caseiras
+                    </header>
+                    <img src="./imagens/Bolinho-de-cenoura-caserinho-_-cheio-de-cobertura-que-todo-mundo-ama-_caseirinhosgourmet.png">
+                    <div class="card-body">
+                        <h4 class="card-title">Bolo de Cenoura</h4>
+                        <p class="card-text">
+                            Bolinho de cenoura caserinho, cheio de cobertura que todo mundo ama 😋😋
+                        </p>
+                        <a href="https://www.instagram.com/p/C-9KWYOMtK2/" class="btn btn-primary" target="_blank">Veja a publicação</a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 p-2">
+                <article class="card">
+                    <header class="card-header">
+                        Na moda
+                    </header>
+                    <img src="./imagens/naked-cake-_-pra-quem-ama-um-doce-_super-recheado-e-com-brigadeiros-recheados-de-kinder-Bueno-da-_do_1.png">
+                    <div class="card-body">
+                        <h4 class="card-title">Naked Cake</h4>
+                        <p class="card-text">
+                            Naked Cake, para quem ama um doce super recheado e com brigadeiros recheados de kinder Bueno! O maior sucesso 😋
+                        </p>
+                        <a href="https://www.instagram.com/p/DATtnTDvqA6/" class="btn btn-primary" target="_blank">Veja a publicação</a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 p-2">
+                <article class="card">
+                    <header class="card-header">
+                        Bolos temáticos
+                    </header>
+                    <img src="./imagens/Temos-Naruto-_-o-fã-amou-o-bolo.png">
+                    <div class="card-body">
+                        <h4 class="card-title">Bolo do Naruto</h4>
+                        <p class="card-text">
+                            Temos Naruto, o fã amou o bolo 😍
+                        </p>
+                        <a href="https://www.instagram.com/p/DDmhRdcxcwy/" class="btn btn-primary" target="_blank">Veja a publicação</a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 p-2">
+                <article class="card">
+                    <header class="card-header">
+                        Com muito recheio
+                    </header>
+                    <img src="./imagens/Bolinho-caseirinho-_-dois-amores-_-para-seu-cafezinho-da-tarde-que-tal-em-__-️-uma-delícia-.png">
+                    <div class="card-body">
+                        <h4 class="card-title">Bolo dois amores</h4>
+                        <p class="card-text">
+                            Bolinho caseirinho dois amores, para seu cafezinho da tarde!! ☕️ Uma delícia ☕️
+                        </p>
+                        <a href="https://www.instagram.com/p/C-9J5wdsu-j/" class="btn btn-primary" target="_blank">Veja a publicação</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+    <footer>
+        2025 - &copy; Eduardo Antunes - Todos os direitos reservados
+    </footer>
+    <script src="/lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
